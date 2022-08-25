@@ -109,7 +109,7 @@ span {
 
 .burger-line {
     border-radius: 15px;
-    height: 4px;
+    height: 3px;
     width: 2.6em;
     display: block;
     background-color: white;
@@ -126,7 +126,7 @@ span {
 }
 
 .primera {
-    transform: translateY(9px) rotate(45deg);
+    transform: translateY(7px) rotate(45deg);
     transition: all 0.4s;
 }
 
@@ -441,7 +441,7 @@ footer p:nth-child(2){
 @media screen and (min-width: 343px) and (max-width: 799px) {
 
     .logo {
-        font-size: 40px;
+        font-size: 30px;
     }
 
     .menu_items {

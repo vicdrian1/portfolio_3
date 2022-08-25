@@ -35,30 +35,14 @@ $(document).ready(function () {
         }
     })
 
+    /*Función para permitir que los contenedores se cierren al clicar en otros.*/
+
     $(".tarjetaInt").each(function(){
         $(this).click(function(){
-            if ($(this).hasClass("active")){
-                $(this).toggleClass("active");
-            }else{
-                $(this).each(function(){
-                    $(this).removeClass("active")
-                })
-                $(this).addClass("active");
-            }
-        })
-    })
-
-/*     $(".tarjetaInt").each(function(){
-        $(this).click(function(){
             $(this).toggleClass("active");
-            $(this).siblings().removeClass("active"); 
+            $(this).siblings().removeClass("active");
+            $(this).stop(); 
         });
     })
-
-    $(function(trabajos) {
-        $(this).toggleClass("active");
-        $(this).siblings().removeClass("active"); 
-        return false;
-      }); */
     
 });
