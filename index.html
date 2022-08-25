@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+    <!-- Enlace a google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+    <!-- Enlace a font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Enlazamos el cdn de jquery para poder acceder a la librería de plugins. -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" type="text/javascript"></script>
+    <script src="/script.js"></script>
+</head>
+<body>
+    
+    <!-- SECCIÓN HERO -->
+    <header class="hero" id="hero">
+        <nav id="slide_nav">
+            <div>
+                <h2 class="logo">Port<span>folio</span></h2>
+            </div>
+
+            <!-- Este es el menú hamburguesa que aparecerá solo cuando la pantalla tenga cierta resolución. -->
+            <div id="burger_menu">
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+            </div>
+
+            <!-- Lista de los elementos de navegación de la web. -->
+            <ul class="menu_items">
+                <li class="menu_item"><a href="#sobreMi">Sobre Mi</a></li>
+                <li class="menu_item"><a href="#conocimientos">Conocimientos</a></li>
+                <li class="menu_item"><a href="#">Experiencia Laboral</a></li>
+                <li class="menu_item"><a href="#">Contacto</a></li>
+            </ul>
+            <!-- BOTÓN -->
+            <!-- <a href="#" class="btn">¡Contáctame!</a> -->
+        </nav>
+        <div class="content">
+            <h4>Hola, me llamo</h4>
+            <h1>Víctor Jácome</h1>
+            <h3>Soy diseñador web.</h3>
+        </div>
+    </header>
+
+    <!-- SECCIÓN SOBRE MI -->
+
+    <section class="about" id="sobreMi">
+        <div class="main">
+            <img src="https://w0.peakpx.com/wallpaper/682/699/HD-wallpaper-yoimiya-genshin-impact.jpg" alt="">
+            <div class="texto">
+                <h2>Sobre Mi:</h2>
+                <h5>Diseñador <span> Web</span></h5>
+                <p>Deseo conseguir mayor experiencia profesional. Aunque mis preferencias están relacionados con el desarrollo web frontend, estoy dispuesto a explorar nuevas áreas y aprender sobre nuevas tecnologías
+                </p>
+            </div>
+        </div>
+    </section>
+
+     <!--Conocimientos-->
+     <div class="conocimientos" id="conocimientos">
+        <div class="title">
+            <h2>Conocimientos</h2>
+        </div>
+
+        <div class="box">
+            <div class="card">
+                <i class="fa-brands fa-figma"></i>
+                <h5>Diseño UX/UI</h5>
+                <div class="cardtext">
+                    <p>Conocimientos sobre el proceso de diseño de una aplicación, desde el Desk Research, Netnografía, hasta la elaboración
+                        de Customer Journeys, User Persona, Business Model Canvas, etc. Conocimientos de diseño UI con Figma y uso de Photoshop.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <i class="fa-brands fa-html5"></i>
+                <h5>Diseño Web con HTML, CSS y Javascript</h5>
+                <div class="cardtext">
+                    <p>Conocimientos sobre Diseño Web para la creación de páginas web desde cero, utilizando HTML5, CSS3 y JavaScript. Conocimientos de Jquery y su ecosistema de plugins.
+                    </p>
+                    
+                </div>
+            </div>
+
+            <div class="card">
+                <i class="fa-brands fa-wordpress"></i>
+                <h5>Diseño Web con Wordpress</h5>
+                <div class="cardtext">
+                    <p>Conocimientos sobre Diseño Web con Wordpress y su ecosistema de plugins. Experiencia con Elementor como constructor visual y diseño de páginas web. Creación de páginas web desde cero.
+                    </p>
+                    
+                </div>
+            </div>
+
+            <div class="card">
+                <i class="fa-brands fa-php"></i>
+                <h5>Programación Fullstack</h5>
+                <div class="cardtext">
+                    <p>Conocimientos sobre php, bases de datos y uso de Workbench. Inserción, edición, selección y borrado de elementos en bases de datos. Integración de las mismas en aplicaciones web.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--EFECTO PORTFOLIO-->
+    <div class="portfolio">
+        <h2>Trabajos Realizados</h2> 
+        <div class="tarjetas">
+            <div class="tarjetaInt" style="background-image: url(/img/Artwork.PNG);">
+                <div class="info_container">
+                    <div class="icon_container">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="100%" height="100%" class="icon" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" clas="icon" d="M12 4v16m8-8H4"/></svg>
+                    </div>
+                    <div class="info">
+                        <div class="mainText"><a href="#" target="_blank">Artwork</a></div>
+                        <div class="sub">Diseño UX/UI</div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="tarjetaInt" style="background-image: url(/img/dreamcatcher.PNG);">
+                <div class="info_container">
+                    <div class="icon_container">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="100%" height="100%" class="icon" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" clas="icon" d="M12 4v16m8-8H4"/></svg>
+                    </div>
+                    <div class="info">
+                        <div class="mainText"><a href="http://proyecto.vicjacomevega.com/" target="_blank"> Dreamcatcher</a></div>
+                        <div class="sub">Diseño Web con Wordpress</div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="tarjetaInt">
+                <div class="info_container">
+                    <div class="icon_container">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="100%" height="100%" class="icon" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" clas="icon" d="M12 4v16m8-8H4"/></svg>
+                    </div>
+                    <div class="info">
+                        <div class="mainText"><a href="#" target="_blank">Genshin Ascension Cards</a></div>
+                        <div class="sub">Diseño Web Fullstack</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tarjetaInt">
+                <div class="info_container">
+                    <div class="icon_container">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="100%" height="100%" class="icon" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" clas="icon" d="M12 4v16m8-8H4"/></svg>
+                    </div>
+                    <div class="info">
+                        <div class="mainText"><a href="#" target="_blank">Genshin Ascension Cards</a></div>
+                        <div class="sub">Diseño Web Fullstack</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>¡Déjame ser parte de tu equipo!</p>
+        <p>Para contactarme, haz clic en los iconos para redirigirte a mis redes sociales.</p>
+        <div class="social">
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+        </div>
+    </footer>
+</body>
+</html>
