@@ -4,9 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Título -->
     <title>Portfolio</title>
 
-    <link rel="stylesheet" href="style.css">
+    <!-- Enlace a css -->
+    <link rel="stylesheet" href="/style/style.css">
+
     <!-- Enlace a google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,10 +24,9 @@
     <script src="/script.js"></script>
 </head>
 <body>
-    
     <!-- SECCIÓN HERO -->
     <header class="hero" id="hero">
-        <nav id="slide_nav">
+        <nav id="slide_nav" class="nav-down">
             <div>
                 <h2 class="logo">Port<span>folio</span></h2>
             </div>
@@ -39,16 +42,26 @@
             <ul class="menu_items">
                 <li class="menu_item"><a href="#sobreMi">Sobre Mi</a></li>
                 <li class="menu_item"><a href="#conocimientos">Conocimientos</a></li>
-                <li class="menu_item"><a href="#portfolio">Trabajos Realizados</a></li>
+                <li class="menu_item"><a href="#portfolio">Proyectos</a></li>
                 <li class="menu_item"><a href="#contacto">Contacto</a></li>
             </ul>
-            <!-- BOTÓN -->
-            <!-- <a href="#" class="btn">¡Contáctame!</a> -->
         </nav>
         <div class="content">
             <h4>Hola, me llamo</h4>
             <h1>Víctor Jácome</h1>
             <h3>Soy diseñador web.</h3>
+        </div>
+        <div class="glowing">
+            <span style="--i:1;"></span>
+            <span style="--i:2;"></span>
+            <span style="--i:3;"></span>
+            <span style="--i:4;"></span>
+        </div>
+        <div class="glowing">
+            <span style="--i:1;"></span>
+            <span style="--i:2;"></span>
+            <span style="--i:3;"></span>
+            <span style="--i:4;"></span>
         </div>
     </header>
 
@@ -56,7 +69,7 @@
 
     <section class="about" id="sobreMi">
         <div class="main">
-            <img src="https://w0.peakpx.com/wallpaper/682/699/HD-wallpaper-yoimiya-genshin-impact.jpg" alt="">
+            <img src="/img/FOTOCV.png" alt="Foto CV">
             <div class="texto">
                 <h2>Sobre Mi:</h2>
                 <h5>Diseñador <span> Web</span></h5>
@@ -119,7 +132,7 @@
     <div class="portfolio" id="portfolio">
         <h2>Trabajos Realizados</h2> 
         <div class="tarjetas">
-            <div class="tarjetaInt" style="background-image: url(/img/Artwork.PNG);">
+            <div class="tarjetaInt" class="tarjeta1" style="background-image: url(/img/Artwork.PNG);">
                 <div class="info_container">
                     <div class="icon_container">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="100%" height="100%" class="icon" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" clas="icon" d="M12 4v16m8-8H4"/></svg>
@@ -131,7 +144,7 @@
                 </div>
             </div>
     
-            <div class="tarjetaInt" style="background-image: url(/img/dreamcatcher.PNG);">
+            <div class="tarjetaInt" class="tarjeta2" style="background-image: url(/img/dreamcatcher.PNG);">
                 <div class="info_container">
                     <div class="icon_container">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="100%" height="100%" class="icon" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" clas="icon" d="M12 4v16m8-8H4"/></svg>
@@ -143,13 +156,13 @@
                 </div>
             </div>
     
-            <div class="tarjetaInt">
+            <div class="tarjetaInt" class="tarjeta3" style="background-image: url(/img/gac.png);">
                 <div class="info_container">
                     <div class="icon_container">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="100%" height="100%" class="icon" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" clas="icon" d="M12 4v16m8-8H4"/></svg>
                     </div>
                     <div class="info">
-                        <div class="mainText"><a href="#" target="_blank">Genshin Ascension Cards</a></div>
+                        <div class="mainText"><a href="/pages/gac.html" target="_blank">Genshin Ascension Cards</a></div>
                         <div class="sub">Diseño Web Fullstack</div>
                     </div>
                 </div>
