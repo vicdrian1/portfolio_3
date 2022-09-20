@@ -819,7 +819,7 @@ textarea{
     /*FOOTER*/
 
     footer{
-        height: 100vh;
+        height: auto;
     }
 
     footer p:nth-child(1){
