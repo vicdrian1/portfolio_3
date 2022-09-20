@@ -130,7 +130,7 @@
 
     <!--EFECTO PORTFOLIO-->
     <div class="portfolio" id="portfolio">
-        <h2>Trabajos Realizados</h2> 
+        <h2>Proyectos</h2> 
         <div class="tarjetas">
             <div class="tarjetaInt" class="tarjeta1" style="background-image: url(/img/Artwork.PNG);">
                 <div class="info_container">
@@ -167,24 +167,28 @@
                     </div>
                 </div>
             </div>
-
-            <div class="tarjetaInt">
-                <div class="info_container">
-                    <div class="icon_container">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="100%" height="100%" class="icon" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" clas="icon" d="M12 4v16m8-8H4"/></svg>
-                    </div>
-                    <div class="info">
-                        <div class="mainText"><a href="#" target="_blank">Genshin Ascension Cards</a></div>
-                        <div class="sub">Diseño Web Fullstack</div>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
 
     <footer id="contacto">
         <p>¡Déjame ser parte de tu equipo!</p>
-        <p>Para contactarme, haz clic en los iconos para redirigirte a mis redes sociales.</p>
+        <p>Para contactarme, puedes rellenar el siguiente formulario o hacer clic en los iconos para redirigirte a mis redes sociales.</p>
+        <form action="POST" name="contacto" class="formulario" data-netlify="true" onSubmit="submit">
+            <div>
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="name">
+            </div>
+            <div>
+                <label for="correo">Correo electrónico</label>
+                <input type="email" id="correo" name="email">
+            </div>
+            <div>
+                <textarea name="message" rows="10" cols="50"></textarea>
+            </div>
+            <div>
+                <button type="submit" class="btn">¡Contáctame!</button>
+            </div>
+        </form>
         <div class="social">
             <a href="#"><i class="fa-brands fa-linkedin"></i></a>
             <a href="#"><i class="fa-brands fa-twitter"></i></a>

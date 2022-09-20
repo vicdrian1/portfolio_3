@@ -70,7 +70,7 @@ span {
     transition: .4s;
 }
 
-/* .btn {
+.btn {
     background-color: #f9004d;
     color: white;
     text-decoration: none;
@@ -84,7 +84,7 @@ span {
 .btn:hover {
     transform: scale(1.2);
 }
- */
+
 .content {
     display: flex;
     flex-direction: column;
