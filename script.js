@@ -46,7 +46,7 @@ $(document).ready(function () {
     })
 
     /*SCROLL*/
-    var didScroll;
+/*     var didScroll;
     var lastScrollTop = 0;
     var delta = 5;
     var navbarHeight = $("#slide_nav").outerHeight();
@@ -69,13 +69,41 @@ $(document).ready(function () {
         if (st > lastScrollTop && st > navbarHeight){
             // Scroll Down
             $("#slide_nav").removeClass("nav-down").addClass("nav-up");
+            $("#slide_nav").slideUp(400);
         } else {
             // Scroll Up
             // If did not scroll past the document (possible on mac)...
             if(st + $(window).height() < $(document).height()) { 
             $("#slide_nav").removeClass("nav-up").addClass("nav-down");
+            $("#slide_nav").slideDown(400);
             }
         }
         lastScrollTop = st;
-    }   
+    }    */
+
+    var lastScrollTop = 0;
+    var headerHeight = $("header").outerHeight();
+    var menuHeight = $("#slide_nav").outerHeight();
+
+    $(window).scroll(function(){
+
+        var st = $(this).scrollTop();
+
+        //Scroll Down
+        if(st> lastScrollTop && st > menuHeight){
+            $("#slide_nav").slideUp(400);
+
+            //Scroll Up
+        }else if(st + $(window).height() < $(document).height()){
+            $("#slide_nav").slideDown(400);
+        }
+
+        if(st < headerHeight){
+            $("#slide_nav").removeClass("nav-down");
+        }else{
+            $("#slide_nav").addClass("nav-down");
+        }
+
+        lastScrollTop = st;
+    })
 });
