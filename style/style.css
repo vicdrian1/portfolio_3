@@ -77,6 +77,7 @@ span {
     border: 2px solid transparent;
     font-weight: bold;
     padding: 10px 25px;
+    margin-left: 75%;
     border-radius: 30px;
     transition: transform .4s;
 }
@@ -552,7 +553,7 @@ h5 {
 
 footer{
     width: 100%;
-    height: 400px;
+    height: auto;
     background:#101010;
     display: flex;
     flex-direction: column;
@@ -562,17 +563,46 @@ footer{
 
 footer p:nth-child(1){
     font-size: 30px;
-    color: white;
+    color:#f9004d;
+    padding-top: 40px;
     margin-bottom: 20px;
     font-weight: bold;
 }
 
 footer p:nth-child(2){
-    font-size: 17px;
+    font-size: 18px;
     color: white;
-    width: 500px;
+    width: 30%;
     text-align: center;
-    line-height: 26px;
+    padding-bottom: 20px;
+}
+
+.formulario{
+    background-color: #191919;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+label{
+    font-size: 18px;
+    color: white;
+}
+
+input{
+    margin-bottom: 15px;
+    margin-top: 5px;
+    width: 100%;
+    border-radius: 5px;
+    height: 2em;
+}
+
+textarea{
+    padding-top:10px;
+    padding-left: 10px;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
 }
 
 .social{
@@ -595,6 +625,13 @@ footer p:nth-child(2){
 .social a:hover{
     transform: scale(1.3);
     transition: .3s;
+}
+
+#final{
+    color: white;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 /* RESPONSIVE MÓVIL*/
@@ -782,7 +819,7 @@ footer p:nth-child(2){
     /*FOOTER*/
 
     footer{
-        height: 320px;
+        height: 100vh;
     }
 
     footer p:nth-child(1){
@@ -792,6 +829,29 @@ footer p:nth-child(2){
 
     footer p:nth-child(2){
         width: 90%;
+    }
+
+    .formulario{
+        width: 90%;
+        padding: 30px;
+    }
+    
+    label{
+        font-size: 18px;
+        color: white;
+    }
+    
+    textarea{
+        padding-top:10px;
+        padding-left: 10px;
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+    }
+
+    .btn {
+        margin-left: 53%;
     }
 
 }
@@ -886,16 +946,21 @@ footer p:nth-child(2){
 
     /*SOBRE MI*/
 
+    .about{
+        height: auto;
+    }
+
     .main {
         display: flex;
         flex-direction: column;
         width: 90%;
-        height: 100vh;
+        height: auto;
     }
 
     .main img {
-        height: 60%;
-        width: 70%;
+        height: 40em;
+        width: 30em;
+        margin-top: 40px;
     }
 
     .texto {
@@ -908,19 +973,24 @@ footer p:nth-child(2){
         font-size: 60px;
         margin-top: 20px;
         text-align: center;
+        margin-bottom: 5px;
     }
 
     .texto h5 {
-        font-size: 30px;
+        font-size: 22px;
+        text-align: center;
+        margin-top: 5px;
     }
 
     .texto p {
         font-size: 20px;
+        width: 100%;
+        text-align: center;
     }
 
     /*CONOCIMIENTOS*/
     .conocimientos {
-        height: 100vh;
+        height: auto;
     }
 
     .title h2 {
@@ -953,7 +1023,7 @@ footer p:nth-child(2){
 
     .portfolio h2 {
         width: 90%;
-        font-size: 40px;
+        font-size: 60px;
         text-align: center;
         margin-bottom: 40px;
     }
@@ -995,20 +1065,43 @@ footer p:nth-child(2){
         text-align: center;
     }
 
+
     /*FOOTER*/
 
     footer{
-        height: 320px;
+        height: auto;
     }
 
     footer p:nth-child(1){
-        width: 90%;
+        width: 80%;
         text-align: center;
     }
 
     footer p:nth-child(2){
-        width: 90%;
-        font-size: 20px;
+        width: 80%;
+    }
+
+    .formulario{
+        width: 80%;
+        padding: 30px;
+    }
+    
+    label{
+        font-size: 18px;
+        color: white;
+    }
+    
+    textarea{
+        padding-top:10px;
+        padding-left: 10px;
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+    }
+
+    .btn {
+        margin-left: 53%;
     }
 
 }

@@ -28,7 +28,7 @@
     <header class="hero" id="hero">
         <nav id="slide_nav" class="nav-down">
             <div>
-                <h2 class="logo">Port<span>folio</span></h2>
+                <h2 class="logo">Vic<span>Dev</span></h2>
             </div>
 
             <!-- Este es el menú hamburguesa que aparecerá solo cuando la pantalla tenga cierta resolución. -->
@@ -172,30 +172,33 @@
 
     <footer id="contacto">
         <p>¡Déjame ser parte de tu equipo!</p>
+
         <p>Para contactarme, puedes rellenar el siguiente formulario o hacer clic en los iconos para redirigirte a mis redes sociales.</p>
-        <form action="POST" name="contacto" class="formulario" data-netlify="true" onSubmit="submit" data-netlify-honeypot="bot-field">
+        <form action="POST" name="contacto" class="formulario" data-netlify="true" onSubmit="submit" data-netlify-honeypot="bot-field" action="/pages/success.html">
 
             <input name="bot-field" style="display:none;">
             <div>
-                <label for="nombre">Nombre</label>
+                <label for="nombre">Nombre:</label>
                 <input type="text" id="nombre" name="name">
             </div>
             <div>
-                <label for="correo">Correo electrónico</label>
+                <label for="correo">Correo electrónico:</label>
                 <input type="email" id="correo" name="email">
             </div>
             <div>
-                <textarea name="message" rows="10" cols="50"></textarea>
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" rows="10" cols="70" placeholder="Escribe aquí tu mensaje"></textarea>
             </div>
             <div>
                 <button type="submit" class="btn">¡Contáctame!</button>
             </div>
         </form>
         <div class="social">
+            <a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a>
             <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="#"><i class="fa-brands fa-twitter"></i></a>
             <a href="#"><i class="fa-brands fa-github"></i></a>
         </div>
+        <p id="final">© Víctor Adrián Jácome Vega 2022</p>
     </footer>
 </body>
 </html>
