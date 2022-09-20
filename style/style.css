@@ -10,7 +10,7 @@
 
 /*VARIABLES*/
 :root{
-    --titulos: calc(4.6875rem + ((1vw - 12.8px) * 3.7353));
+    --titulos: calc(3.75rem + ((1vw - 12.8px) * 2.1345));
     --fondoA: #101010;
     --fondoB: #191919;
     --principal: white;
@@ -329,7 +329,7 @@ ul.show {
 .about {
     width: 100%;
     height: 100vh;
-    background-color: #191919;
+    background-color: var(--fondoB);
     display: flex;
     justify-content: center;
     overflow: hidden;
@@ -357,19 +357,19 @@ ul.show {
 }
 
 .texto h2 {
-    color: white;
-    font-size: 75px;
+    color: var(--principal);
+    font-size: var(--titulos);
     margin-bottom: 20px;
 }
 
 .texto h5 {
-    color: white;
+    color: var(--principal);
     letter-spacing: 2px;
-    font-size: 24px;
+    font-size: calc(1.5rem + ((1vw - 12.8px) * 0.2134));
 }
 
 .texto p {
-    color: #fcfc;
+    color: var(--secundario2);
     letter-spacing: 1px;
     line-height: 28px;
     font-size: 20px;
@@ -381,7 +381,8 @@ ul.show {
 .conocimientos {
     background: #101010;
     width: 100%;
-    height: 100vh;
+    height: auto;
+    padding: 15em 0 15em 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -992,13 +993,11 @@ textarea{
     }
 
     .texto h5 {
-        font-size: 22px;
         text-align: center;
         margin-top: 5px;
     }
 
     .texto p {
-        font-size: 20px;
         width: 100%;
         text-align: center;
     }
