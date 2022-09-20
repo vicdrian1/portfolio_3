@@ -8,12 +8,27 @@
     scroll-behavior: smooth;
 }
 
+/*VARIABLES*/
+:root{
+    --titulos: calc(4.6875rem + ((1vw - 12.8px) * 3.7353));
+    --fondoA: #101010;
+    --fondoB: #191919;
+    --principal: white;
+    --secundario: #f9004d;
+    --secundario2: #fcfc;
+}
+
+/*ENLACES*/
+a:link, a:visited, a:hover, a:active{
+    color: inherit;
+    text-decoration: none;
+}
 /* HERO SECTION */
 
 .hero {
     height: 100vh;
     width: 100%;
-    background-color: #101010;
+    background-color: var(--fondoA);
     overflow: hidden;
 }
 
@@ -25,7 +40,7 @@ nav {
     padding-left: 5em;
     padding-right: 2em;
     height: 10vh;
-    background-color: #101010;
+    background-color: var(--fondoA);
     position: fixed;
     transition: top 0.5s ease-in-out;
     z-index: 10;
@@ -36,14 +51,19 @@ nav {
   }
 
 .logo {
-    color: white;
+    color: var(--principal);
     font-size: 35px;
     letter-spacing: 1px;
     cursor: pointer;
+    transition: transform .4s;
+}
+
+.logo:hover{
+    transform: scale(1.2);
 }
 
 span {
-    color: #f9004d;
+    color: var(--secundario);
 }
 
 .menu_items {
@@ -59,31 +79,15 @@ span {
 }
 
 .menu_item a {
-    color: white;
+    color: var(--principal);
     text-decoration: none;
     font-weight: bold;
     font-size: 22px;
 }
 
 .menu_item a:hover {
-    color: #f9004d;
+    color: var(--secundario);
     transition: .4s;
-}
-
-.btn {
-    background-color: #f9004d;
-    color: white;
-    text-decoration: none;
-    border: 2px solid transparent;
-    font-weight: bold;
-    padding: 10px 25px;
-    margin-left: 75%;
-    border-radius: 30px;
-    transition: transform .4s;
-}
-
-.btn:hover {
-    transform: scale(1.2);
 }
 
 .content {
@@ -95,23 +99,24 @@ span {
 }
 
 .content h1 {
-    color: white;
+    color: var(--principal);
     margin: 20px 0px 20px;
-    font-size: 75px;
+    font-size: calc(4.6875rem + ((1vw - 12.8px) * 1.6009));
 }
 .content h3 {
     color: white;
-    font-size: 25px;
+    font-size: 30px;
     margin-bottom: 50px;
 }
 
 .content h4 {
-    color: #fcfc;
+    color: var(--secundario2);
     letter-spacing: 2px;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 /*ANIMACION PARTÍCULAS*/
+
 .glowing{
     position:relative;
     top:-80%;
@@ -119,7 +124,6 @@ span {
     width: 400px;
     height: 400px;
     margin: -150px;
-/*     transform-origin: right; */
     animation: colorChange 5s linear infinite;
 }
 
@@ -273,7 +277,7 @@ span {
     height: 3px;
     width: 2.6em;
     display: block;
-    background-color: white;
+    background-color: var(--principal);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -605,6 +609,23 @@ textarea{
     border-radius: 5px;
 }
 
+.btn {
+    background-color: var(--secundario);
+    color: var(--principal);
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 10px 25px;
+    margin-left: 72%;
+    border-radius: 30px;
+    transition: transform .4s;
+    font-size: 14px;
+}
+
+.btn:hover {
+    transform: scale(1.2);
+}
+
 .social{
     display: flex;
 }
@@ -654,10 +675,6 @@ textarea{
         font-weight: bold;
     }
 
-    .menu_item a {
-        font-size: 22px;
-    }
-
     #burger_menu {
         cursor: pointer;
         display: flex;
@@ -702,7 +719,6 @@ textarea{
     .content h1 {
         color: white;
         margin: 0;
-        font-size: 60px;
         padding-left: 25%;
         padding-right: 25%;
     }
@@ -711,7 +727,6 @@ textarea{
         margin-top: .3em;
         align-self: flex-end;
         padding-right: 8%;
-        ;
     }
 
     .content h4 {
@@ -878,6 +893,7 @@ textarea{
         font-weight: bold;
     }
 
+    /*Se cambia el tamaño para mejorar la visibilidad*/
     .menu_item a {
         font-size: 25px;
     }
@@ -926,7 +942,6 @@ textarea{
     .content h1 {
         color: white;
         margin: 0;
-        font-size: 60px;
         padding-left: 20%;
         padding-right: 25%;
     }
@@ -936,14 +951,12 @@ textarea{
         align-self: flex-end;
         padding-right: 15%;
         ;
-        font-size: 30px;
     }
 
     .content h4 {
         margin-bottom: 1em;
         align-self: flex-start;
         padding-left: 15%;
-        font-size: 25px;
     }
 
     /*SOBRE MI*/
