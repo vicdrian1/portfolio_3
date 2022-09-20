@@ -173,7 +173,9 @@
     <footer id="contacto">
         <p>¡Déjame ser parte de tu equipo!</p>
         <p>Para contactarme, puedes rellenar el siguiente formulario o hacer clic en los iconos para redirigirte a mis redes sociales.</p>
-        <form action="POST" name="contacto" class="formulario" data-netlify="true" onSubmit="submit">
+        <form action="POST" name="contacto" class="formulario" data-netlify="true" onSubmit="submit" data-netlify-honeypot="bot-field">
+
+            <input name="bot-field" style="display:none;">
             <div>
                 <label for="nombre">Nombre</label>
                 <input type="text" id="nombre" name="name">
