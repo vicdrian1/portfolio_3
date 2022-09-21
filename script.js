@@ -70,4 +70,9 @@ $(document).ready(function () {
 
         lastScrollTop = st;
     })
+
+    $('video').on('ended', function () {
+        this.load();
+        this.play();
+      });
 });
