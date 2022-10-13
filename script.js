@@ -85,11 +85,8 @@ $(document).ready(function () {
         $("#contacto h2:nth-of-type(1)").text("Contact");
         $("#contacto p:nth-of-type(1)").text("Let me be part of your team!");
         $("#contacto p:nth-of-type(2)").text("To contact me, you can fill this form or use the social media icons to visit them.");
-        $(".formulario  div:nth-of-type(1) label").text("Name:");
-        $(".formulario  div:nth-of-type(2) label").text("Email:");
-        $(".formulario  div:nth-of-type(3) label").text("Message:");
-        $("#message").attr("placeholder","Write your message here");
-        $(".formulario  div:nth-of-type(4) button").text("!Contact Me!");
+        $(".formulario").attr("style", "display:block");
+        $(".formulario2").attr("style","display:none");
 
     /* ARTWORK TEST */
 
@@ -100,12 +97,12 @@ $(document).ready(function () {
         //Parte 2
         $('body > main > div.content2 > div.texto1 > h2').text('User Experience (UX)');
         $('body > main > div.content2 > div.texto1 > p').text('For the UX part, we could see 3 different steps:');
-        $('body > main > div.content2 > div.texto1 > ul > li').html('<u>1) Observation:</u> On this step, we made a research about apps that look alike <span>(Desk Research)</span>, about different opinions that the users have about them <span>(Netnography)</span>, using graphics to visualize our conclusions. We also started to consider options about how to approach the project using <span>"Research Questions"</span>, <span>"Benchmarking"</span> and a <span>"SWOT analysis"</span>. A survey was also made using <span>"Google Forms"</span> and we made some interviews to potential users of the app (Both artists and non artists).');
+        $('body > main > div.content2 > div.texto1 > ul > li').html('<u>1) Observation:</u> On this step, we made a research about similar applications <span>(Desk Research)</span>, about different opinions that the users have about them <span>(Netnography)</span>, using graphics to visualize our conclusions. We also started to consider options about how to approach the project using <span>"Research Questions"</span>, <span>"Benchmarking"</span> and a <span>"SWOT analysis"</span>. A survey was also made using <span>"Google Forms"</span> and we made some interviews to potential users of the app (Both artists and non artists).');
         
         //Parte 3
         $('body > main > div:nth-child(2) > div.texto1 > h2').text('User Experience (UX)');
         $('body > main > div:nth-child(2) > div.texto1 > ul > li:nth-child(1)').html('<u>2)Summary:</u> On this step we analysed the profile of the potential users of the app by creating a <span>"User Persona"</span>, we also used <span>"Empathy Maps"</span>, <span>"Customer Journeys"</span> and a <span>"Matrix of Needs"</span>.');
-        $('body > main > div:nth-child(2) > div.texto1 > ul > li:nth-child(2)').html('<u>3)Ideation:</u> We organised the ideas gathered in the previous steps and we analyse their viability through <span>"MoSCoW diagrams"</span>, <span>"in/Out diagrams"</span>. We also made <span>"Value Propositions"</span> from the ideas. In this phase, we choose which ideas will be added or discarded from the project.');
+        $('body > main > div:nth-child(2) > div.texto1 > ul > li:nth-child(2)').html('<u>3)Ideation:</u> We organised the ideas gathered in the previous steps and we considered their viability through <span>"MoSCoW diagrams"</span>, <span>"in/Out diagrams"</span>. We also made <span>"Value Propositions"</span> from the ideas. In this phase, we chose which ideas will be added or discarded from the project.');
         
         //Parte 4
         $('body > main > div.content4 > div.texto1 > h2').text('User Interface (UI)');
@@ -113,7 +110,7 @@ $(document).ready(function () {
 
         //Parte 5
         $('#mas > div.texto1 > h2').text('More about the project');
-        $('#mas > div.texto1 > p').text('The High-Fidelity prototype is uploaded. You can see the differents parts of the app and you can even try it. You can also see the components, just by visiting this link:');
+        $('#mas > div.texto1 > p').text('The High-Fidelity prototype is uploaded as a project in Figma. You can see the differents parts of the app and you can even try it. You can also see the components, just by visiting this link:');
         $('#mas > div.texto1 > button').html('<a target="_blank" href="https://www.figma.com/proto/lyWAeg7cmPdUHgcrFwOg88/ArtWork_Mine?page-id=123%3A856&node-id=183%3A561&viewport=655%2C401%2C0.25&scaling=min-zoom&starting-point-node-id=124%3A63">Go to the project</a>');
         $('#btnFinal').html('<a href="/index.html">Go to the main page</a>');
 
@@ -126,14 +123,14 @@ $(document).ready(function () {
 
         //Parte 2
         $("#texto2DC > h2").text('What tools did I use?');
-        $("#texto2DC > p").html('This website was made by using <span>"Elementor Pro"</span> as a theme builder. This project was designed from Zero '+
+        $("#texto2DC > p").html('This website was made by using <span>"Elementor Pro"</span> as a theme builder. This project was designed from zero '+
         'and it had a phase of creative design (moodboard, prototyping, etc.) and a phase of building using Wordpress. We used '+
         'plugins like <span>"Loginpress</span> (used to customize the access to the administration panel of the website),<span>"WPS Child Theme Generator"</span> '+
         '(use to create child themes), <span>"WP-Optimize"</span> (for web and image optimization), etc.');
 
         //Parte 3
         $("#texto3DC > h2").text("More about the project");
-        $("#texto3DC > p").html('The project used a lot of plugins to improve is functionality. <span>"WPS Hide Login"</span> was used to hide the administration'+
+        $("#texto3DC > p").html('The project used a lot of plugins to improve its functionality. <span>"WPS Hide Login"</span> was used to hide the administration'+
         ' panel of the website (getting rid of the famous <span>"wp-admin"</span> and hiding it from the visitors).'+ 
         '<span> "Wordfence"</span> was used as an antivirus and antimalware plugin. <span>"All-in One WP-Migration"</span> was also '+
         'used to create backups in case we need them (or even to migrate the website). If you want to see the web and try it, here is the link:');
@@ -207,11 +204,14 @@ $(document).ready(function () {
             $("#contacto h2:nth-of-type(1)").text("Contacto");
             $("#contacto p:nth-of-type(1)").text("¡Déjame ser parte de tu equipo!");
             $("#contacto p:nth-of-type(2)").text("Para contactarme, puedes rellenar el siguiente formulario o hacer clic en los iconos para redirigirte a mis redes sociales.");
-            $(".formulario  div:nth-of-type(1) label").text("Nombre:");
+            $(".formulario2").attr("style", "display: block");
+            $(".formulario").attr("style","display:none");
+
+            /*             $(".formulario  div:nth-of-type(1) label").text("Nombre:");
             $(".formulario  div:nth-of-type(2) label").text("Correo Electrónico:");
             $(".formulario  div:nth-of-type(3) label").text("Mensaje:");
             $("#message").attr("placeholder","Escribe aquí tu mensaje");
-            $(".formulario  div:nth-of-type(4) button").text("!Contáctame!");
+            $(".formulario  div:nth-of-type(4) button").text("!Contáctame!"); */
 
         /* ARTWORK TEST */
 

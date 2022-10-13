@@ -209,6 +209,25 @@
                 <button type="submit" class="btn">!Contact Me!</button>
             </div>
         </form>
+        <form action="/pages/exito.html" method="POST" name="contacto" class="formulario2" data-netlify="true" onSubmit="submit" data-netlify-honeypot="bot-field" style="display: none;">
+
+            <input name="bot-field" style="display:none;">
+            <div>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="name" required>
+            </div>
+            <div>
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo" name="email" required>
+            </div>
+            <div>
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" rows="10" cols="70" placeholder="Escribe tu mensaje aquí" required></textarea>
+            </div>
+            <div>
+                <button type="submit" class="btn">!Contáctame!</button>
+            </div>
+        </form>
         <div class="social">
             <a href="mailto:vicjacveg@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
             <a href="https://www.linkedin.com/in/vicdrian/"><i class="fa-brands fa-linkedin"></i></a>
