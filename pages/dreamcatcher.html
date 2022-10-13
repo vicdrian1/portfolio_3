@@ -39,22 +39,29 @@
 
             <!-- Lista de los elementos de navegación de la web. -->
             <ul class="menu_items">
-                <li class="menu_item"><a href="/index.html#sobreMi">Sobre Mi</a></li>
-                <li class="menu_item"><a href="/index.html#conocimientos">Conocimientos</a></li>
-                <li class="menu_item"><a href="/index.html#portfolio">Proyectos</a></li>
-                <li class="menu_item"><a href="/index.html#contacto">Contacto</a></li>
+                <li class="menu_item"><a href="/index.html#sobreMi">About Me</a></li>
+                <li class="menu_item"><a href="/index.html#conocimientos">Knowledge</a></li>
+                <li class="menu_item"><a href="/index.html#portfolio">Projects</a></li>
+                <li class="menu_item"><a href="/index.html#contacto">Contact</a></li>
             </ul>
-            <!-- BOTÓN -->
-            <!-- <a href="#" class="btn">¡Contáctame!</a> -->
+
+            <div class="language">
+                <div class="language-selected">
+                    EN
+                </div>
+                <ul>
+                    <li><p class="en">EN</p></li>
+                    <li><p href="#" class="es">ES</p></li>
+                </ul>
+            </div>
         </nav>
         <div class="content">
             <div class="imagen1">
                 <img src="/img/Otras/dc_1.png" alt="Imagen Portada Dreamcatcher">
             </div>
-            <div class="texto1">
+            <div class="texto1" id="texto1DC">
                 <h2>Dreamcatcher</h2>
-                <p>Proyecto final del módulo de <span>“Wordpress”</span>. La idea principal era crear una página web dedicada al grupo de pop coreano <span>“Dreamcatcher”</span>. 
-                    La página tiene información sobre las integrantes del grupo, discografía, su historia y también un apartado en el que puedes suscribirte a una <span>“Newsletter”</span>.
+                <p>Final project of the <span>"Wordpress Course"</span>. Our goal was to create a webpage dedicated to the Kpop girl group <span>"Dreamcatcher"</span>. This website has information about the group members, their discography, their history and you can also suscribe to a <span>"Newsletter"</span> to stay tuned for new updates.
                 </p>
             </div>
         </div>
@@ -66,11 +73,9 @@
             <div class="imagen1">
                 <img src="/img/Otras/dc_2.png" alt="Iconos Programas">
             </div>
-            <div class="texto1">
-                <h2>¿Qué herramientas utilicé?</h2>
-                <p>La página web se diseñó utilizando <span>“Elementor Pro”</span> como constructor visual. Este proyecto tuvo una fase de diseño creativo (moodboard, prototipado, etc.) y otra de creación de la web con Wordpress. 
-                    Utilizamos algunos plugins como <span>"Loginpress”</span> (para personalizar la página de acceso eliminando el famoso <span>“wp-admin”</span>),<span>”WPS Child Theme Generator”</span> (creación de temas hijos), 
-                    <span>“WP-Optimize”</span> (Optimización de imágenes y de la web en general), etc.</p>
+            <div class="texto1" id="texto2DC">
+                <h2>What tools did I use?</h2>
+                <p>This website was made by using <span>"Elementor Pro"</span> as a theme builder. This project was designed from Zero and it had a phase of creative design (moodboard, prototyping, etc.) and a phase of building using Wordpress. We used plugins like <span>"Loginpress</span> (used to customize the access to the administration panel of the website),<span>"WPS Child Theme Generator"</span> (use to create child themes), <span>"WP-Optimize"</span> (for web and image optimization), etc.</p>
             </div>
         </div>
         <div class="content3">
@@ -79,16 +84,15 @@
                     <source src="/video/videodc.mp4" type="video/mp4">
                 </video>
             </div>
-            <div class="texto1">
-                <h2>Más sobre el proyecto</h2>
-                <p>El proyecto cuenta con otros plugins para mejorar su funcionamiento, como <span>“WPS Hide Login”</span> (para ocultar a los visitantes el acceso a la web), 
-                    <span>“Wordfence”</span> (antivirus y anti-malware) y <span>“All-in One WP-Migration”</span> (para migrar el sitio a otro servicio de hosting). Si quieres ver la web en funcionamiento y probarla, aquí tienes un enlace directo:
+            <div class="texto1" id="texto3DC">
+                <h2>More about the project</h2>
+                <p>The project used a lot of plugins to improve is functionality. <span>"WPS Hide Login"</span> was used to hide the administration panel of the website (getting rid of the famous <span>"wp-admin"</span> and hiding it from the visitors). <span> "Wordfence"</span> was used as an antivirus and antimalware plugin. <span>"All-in One WP-Migration"</span> was also used to create backups in case we need them (or even to migrate the website). If you want to see the web and try it, here is the link:
                 </p>
-                <button class="btn"><a target="_blank" href="http://proyecto.vicjacomevega.com/">Ir al proyecto</a></button>
+                <button class="btn"><a target="_blank" href="http://proyecto.vicjacomevega.com/">Go to the project</a></button>
             </div>
         </div>
         <footer>
-            <button class="btn" id="btnFinal"><a target="_blank" href="/index.html">Volver a la página principal</a></button>
+            <button class="btn" id="btnFinal"><a target="_blank" href="/index.html">Go to the main page</a></button>
             <p id="final">© Víctor Adrián Jácome Vega 2022</p>
         </footer>
     </main>

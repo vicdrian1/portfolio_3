@@ -23,6 +23,91 @@ a:link, a:visited, a:hover, a:active{
     color: inherit;
     text-decoration: none;
 }
+
+/*LENGUAJE TEST*/
+
+.language{
+    position: relative;
+    width: 120px;
+    margin-left: 40px;
+    font-weight: bold;
+}
+
+.language-selected{
+    display: flex;
+    align-items: center;
+    color: var(--principal);
+    cursor: pointer;
+}
+
+.language-selected:before{
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url("https://flagicons.lipis.dev/flags/4x3/gb.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+}
+
+.language ul{
+    position: absolute;
+    width: 140px;
+    background-color: #101010;
+    padding-top: 10px;
+    display: none;
+}
+
+.language:hover ul{
+    display: block;
+}
+
+.language ul li{
+    list-style: none;
+}
+
+.language ul li p{
+    display: block;
+    color: var(--principal);
+    padding-top: 5px 10px;
+    cursor: pointer;
+}
+
+.language ul li:hover{
+    background-color: #191919;
+}
+
+.language ul li p:before{
+    content: "";
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+
+p.es:before{
+    background-image: url("https://flagicons.lipis.dev/flags/4x3/es.svg");
+}
+
+p.en:before{
+    background-image: url("https://flagicons.lipis.dev/flags/4x3/gb.svg");
+}
+
+/*JQUERY*/
+.language-selected.change-en:before{
+    background-image: url("https://flagicons.lipis.dev/flags/4x3/gb.svg");
+}
+
+.language-selected.change-es:before{
+    background-image: url("https://flagicons.lipis.dev/flags/4x3/es.svg");
+}
+
+
 /* HERO SECTION */
 
 .hero {
@@ -74,8 +159,6 @@ span {
     margin-block-start: 0;
     margin-block-end: 0;
     width: 70%;
-    padding-left: 10%;
-    padding-right: 10%;
 }
 
 .menu_item a {
@@ -684,6 +767,10 @@ textarea{
         font-weight: bold;
     }
 
+    .menu_item a {
+        font-size: 22px;
+    }
+
     #burger_menu {
         cursor: pointer;
         display: flex;
@@ -691,6 +778,10 @@ textarea{
         flex-direction: column;
         z-index: 11;
         padding-right: .5em;
+    }
+
+    .language{
+        width: auto;
     }
 
     /*ANIMACION PARTÍCULAS*/
@@ -719,14 +810,14 @@ textarea{
 
     .content h1 {
         margin: 0;
-        padding-left: 25%;
+        padding-left: 30%;
         padding-right: 25%;
     }
 
     .content h3 {
         margin-top: .3em;
         align-self: flex-end;
-        padding-right: 8%;
+        padding-right: 15%;
     }
 
     .content h4 {
@@ -879,11 +970,13 @@ textarea{
 
     .btn {
         margin-left: 53%;
+        width: 50%;
     }
 
     #final{
         padding-bottom: 10px;
     }
+
 
 }
 
@@ -920,6 +1013,7 @@ textarea{
         z-index: 11;
         padding-right: .5em;
     }
+
 
     /*ANIMACION PARTÍCULAS*/
     .glowing{
@@ -964,6 +1058,10 @@ textarea{
         margin-bottom: 1em;
         align-self: flex-start;
         padding-left: 20%;
+    }
+
+    .language{
+        width: auto;
     }
 
     /*SOBRE MI*/
@@ -1126,7 +1224,8 @@ textarea{
     }
 
     .btn {
-        margin: 1% 0 0 75%;
+        margin: 1% 0 0 70%;
+        width: 30%;
     }
 
     #final{

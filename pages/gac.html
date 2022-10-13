@@ -10,6 +10,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 
+    <!--FAVICON-->
+    <link rel="icon" type="image/x-icon" href="/img/favicon.png">
+
     <!-- Enlace a css -->
     <link rel="stylesheet" href="/style/gac.css">
 
@@ -36,27 +39,30 @@
 
             <!-- Lista de los elementos de navegación de la web. -->
             <ul class="menu_items">
-                <li class="menu_item"><a href="/index.html#sobreMi">Sobre Mi</a></li>
-                <li class="menu_item"><a href="/index.html#conocimientos">Conocimientos</a></li>
-                <li class="menu_item"><a href="/index.html#portfolio">Proyectos</a></li>
-                <li class="menu_item"><a href="/index.html#contacto">Contacto</a></li>
+                <li class="menu_item"><a href="/index.html#sobreMi">About Me</a></li>
+                <li class="menu_item"><a href="/index.html#conocimientos">Knowledge</a></li>
+                <li class="menu_item"><a href="/index.html#portfolio">Projects</a></li>
+                <li class="menu_item"><a href="/index.html#contacto">Contact</a></li>
             </ul>
-            <!-- BOTÓN -->
-            <!-- <a href="#" class="btn">¡Contáctame!</a> -->
+
+            <div class="language">
+                <div class="language-selected">
+                    EN
+                </div>
+                <ul>
+                    <li><p class="en">EN</p></li>
+                    <li><p href="#" class="es">ES</p></li>
+                </ul>
+            </div>
         </nav>
         <div class="content">
             <div class="imagen1">
                 <img src="/img/Otras/gac_1.png" alt="Imagen Portada Genshin Ascension Cards">
             </div>
-            <div class="texto1">
+            <div class="texto1" id="gac1">
                 <h2>Genshin Ascension Cards</h2>
-                <p>Proyecto final del módulo de <span>“Fullstack”</span>. La idea era crear una aplicación web capaz de
-                    generar unas tarjetas según el personaje elegido.
-                    Estas tarjetas nos brindarían información sobre los materiales necesarios para subir de nivel a
-                    dichos personajes.
-                    Los personajes son parte del videojuego llamado <span>“Genshin Impact”</span>.
-                    Decidí implementar también un botón de descarga para poder guardar la tarjeta generada en el
-                    dispositivo.</p>
+                <p>Final project of the <span>"Fullstack course"</span>. Our goal was to create a web app which could generate cards from a previously selected character. 
+                    These cards give us information about the materials we need to level up our characters. All the characters are from a videogame called <span>"Genshin Impact"</span>. We decided to add a download button so we could save the generated card in our device.</p>
             </div>
         </div>
         
@@ -67,12 +73,9 @@
             <div class="imagen1">
                 <img src="/img/Otras/gac_1_2_2.png" alt="Iconos Programas">
             </div>
-            <div class="texto1">
-                <h2>¿Qué herramientas utilicé?</h2>
-                <p>La página web se diseñó utilizando HTML5, CSS3, Javascript y jQuery. La información se subió a una
-                    base de datos facilitada por <span> Heroku </span> y se conectó a la web con php.
-                    El código está subido a un repositorio de <span>Github</span> y sincronizado para que cualquier
-                    cambio realizado sea efectivo casi al instante. </p>
+            <div class="texto1" id="gac2">
+                <h2>What tools did I use?</h2>
+                <p>The website was designed using HTML5, CSS3, Javascript and JQuery. All the information was uploaded to a database from <span>"Heroku"</span> and was linked to our site using php. The code was uploaded to a <span>"Github"</span> repository and synchronized with our website so any change is live in real time.</p>
             </div>
         </div>
         <div class="content3">
@@ -81,17 +84,15 @@
                     <source src="/video/videogc1.mp4" type="video/mp4">
                 </video>
             </div>
-            <div class="texto1">
-                <h2>Más sobre el proyecto</h2>
-                <p>El proyecto cuenta con una pequeña sección de contacto y con una sección de información sobre el
-                    origen del mismo, con imágenes para dar mejor aspecto visual a la web.
-                    Si quieres ver la web en funcionamiento y probarla, aquí te dejo un enlace: 
+            <div class="texto1" id="gac3">
+                <h2>More about the project</h2>
+                <p>The project has a <span>"Contact"</span> and an <span>"About Us"</span> section with images to improve the visual of the site. If you want to watch the website running, you can try it by following this link:
                 </p>
-                <button class="btn"><a target="_blank" href="https://proyectofinalvictor.herokuapp.com/">Ir al proyecto</a></button>
+                <button class="btn"><a target="_blank" href="https://proyectofinalvictor.herokuapp.com/">Go to the project</a></button>
             </div>
         </div>
         <footer>
-            <button class="btn" id="btnFinal"><a target="_blank" href="/index.html">Volver a la página principal</a></button>
+            <button class="btn" id="btnFinal"><a target="_blank" href="/index.html">Go to the main page</a></button>
             <p id="final">© Víctor Adrián Jácome Vega 2022</p>
         </footer>
     </main>
