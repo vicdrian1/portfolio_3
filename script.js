@@ -41,6 +41,8 @@ $(document).ready(function () {
 
     function tradEN (){
         $("body").animate({"opacity":"0.0"}, 600, function(){
+
+            $(".formulario").attr("action", "/pages/success.html")
             //Menú
             $(".menu_item:nth-of-type(1) a").text('About Me');
             $(".menu_item:nth-of-type(2) a").text('Knowledge');
@@ -84,7 +86,7 @@ $(document).ready(function () {
             $(".formulario  div:nth-of-type(1) label").text("Name:");
             $(".formulario  div:nth-of-type(2) label").text("Email:");
             $(".formulario  div:nth-of-type(3) label").text("Message:");
-            $("#message").text("Write your message here");
+            $("#message").attr("placeholder","Write your message here");
             $(".formulario  div:nth-of-type(4) button").text("!Contact Me!");
 
         /* ARTWORK TEST */
