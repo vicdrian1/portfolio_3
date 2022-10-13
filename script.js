@@ -216,7 +216,7 @@ $(document).ready(function () {
             $(".formulario  div:nth-of-type(1) label").text("Nombre:");
             $(".formulario  div:nth-of-type(2) label").text("Correo Electrónico:");
             $(".formulario  div:nth-of-type(3) label").text("Mensaje:");
-            $("#message").text("Escribe aquí tu mensaje");
+            $("#message").attr("placeholder","Escribe aquí tu mensaje");
             $(".formulario  div:nth-of-type(4) button").text("!Contáctame!");
 
         /* ARTWORK TEST */
