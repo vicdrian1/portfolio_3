@@ -244,7 +244,7 @@ $(document).ready(function () {
 
         //Parte 5
         $('#mas > div.texto1 > h2').text('Más sobre el proyecto');
-        $('#mas > div.texto1 > p').text('El prototipo funcional en alta está subido como proyecto en figma. Puedes mirar las distintas pantallas e incluso probarlo, también puedes ver sus componentes en el siguiente enlace:');
+        $('#mas > div.texto1 > p').text('El prototipo funcional en alta está subido como proyecto en Figma. Puedes mirar las distintas pantallas e incluso probarlo, también puedes ver sus componentes en el siguiente enlace:');
         $('#mas > div.texto1 > button > a').text('Ir al proyecto');
         $('#btnFinal').html('<a href="/index.html">Ir a la página principal</a>');
 
