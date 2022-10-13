@@ -79,9 +79,9 @@ $(document).ready(function () {
             $("#contacto h2:nth-of-type(1)").text("Contact");
             $("#contacto p:nth-of-type(1)").text("Let me be part of your team!");
             $("#contacto p:nth-of-type(2)").text("To contact me, you can fill this form or use the social media icons to visit them.");
-            $("#contacto > form > div:nth-child(2) > label").text("Name:");
-            $("#contacto > form > div:nth-child(3) > label").text("Email:");
-            $("#contacto > form > div:nth-child(4) > label").text("Message:");
+            $(".formulario  div:nth-of-type(1) label").text("Name:");
+            $(".formulario  div:nth-of-type(2) label").text("Email:");
+            $(".formulario  div:nth-of-type(3) label").text("Message:");
             $("#message").text("Write your message here");
             $("#contacto > form > div:nth-child(5) > button").text("!Contact Me!");
 
@@ -202,9 +202,9 @@ $(document).ready(function () {
             $("#contacto h2:nth-of-type(1)").text("Contacto");
             $("#contacto p:nth-of-type(1)").text("¡Déjame ser parte de tu equipo!");
             $("#contacto p:nth-of-type(2)").text("Para contactarme, puedes rellenar el siguiente formulario o hacer clic en los iconos para redirigirte a mis redes sociales.");
-            $("#contacto > form > div:nth-child(2) > label").text("Nombre:");
-            $("#contacto > form > div:nth-child(3) > label").text("Correo Electrónico:");
-            $("#contacto > form > div:nth-child(4) > label").text("Mensaje:");
+            $(".formulario  div:nth-of-type(1) label").text("Nombre:");
+            $(".formulario  div:nth-of-type(2) label").text("Correo Electrónico:");
+            $(".formulario  div:nth-of-type(3) label").text("Mensaje:");
             $("#message").text("Escribe aquí tu mensaje");
             $("#contacto > form > div:nth-child(5) > button").text("!Contáctame!");
 
