@@ -83,7 +83,7 @@ $(document).ready(function () {
             $(".formulario  div:nth-of-type(2) label").text("Email:");
             $(".formulario  div:nth-of-type(3) label").text("Message:");
             $("#message").text("Write your message here");
-            $("#contacto > form > div:nth-child(5) > button").text("!Contact Me!");
+            $(".formulario  div:nth-of-type(4) button").text("!Contact Me!");
 
         /* ARTWORK TEST */
 
@@ -206,7 +206,7 @@ $(document).ready(function () {
             $(".formulario  div:nth-of-type(2) label").text("Correo Electrónico:");
             $(".formulario  div:nth-of-type(3) label").text("Mensaje:");
             $("#message").text("Escribe aquí tu mensaje");
-            $("#contacto > form > div:nth-child(5) > button").text("!Contáctame!");
+            $(".formulario  div:nth-of-type(4) button").text("!Contáctame!");
 
         /* ARTWORK TEST */
 
