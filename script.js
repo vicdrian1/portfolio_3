@@ -53,7 +53,7 @@ $(document).ready(function () {
             //SOBRE MI
             $(".texto h2").text('About Me');
             $(".texto h5").html('Web <span>Designer</span>'); 
-            $(".texto p").text('Looking forward to gain more professional experience. I prefer UX design and front-end development but I"m always willing to explore new areas and technologies.');  
+            $(".texto p").text("Looking forward to gain more professional experience. I prefer UX design and front-end development but I'm always willing to explore new areas and technologies.");  
             
             //CONOCIMIENTOS
             $(".title h2").text('Knowledge');
@@ -61,7 +61,7 @@ $(document).ready(function () {
             $(".card:nth-of-type(1) p").text('Knowledge about the development process of an application. From the UX process (Desk Research, Netnography, User Persona, etc.) to the UI Design(Creation of elements, creation of prototypes, etc.).');
 
             $(".card:nth-of-type(2) h5").text('Web Design with HTML, CSS and Javascript');
-            $(".card:nth-of-type(2) p").text('Knowledge about how to create a webpage from zero, using HTML5, CSS3 and Javascript. I also know how to use jquery and the plugins it offers.	')
+            $(".card:nth-of-type(2) p").text('Knowledge about how to create a webpage from zero, using HTML5, CSS3 and Javascript. I also know how to use Jquery and some of its plugins.	')
 
             $(".card:nth-of-type(3) h5").text('Web Design with Wordpress');
             $(".card:nth-of-type(3) p").text('Knowledge about how to create a webpage from zero using wordpress. Experience with theme builders like Elementor, child themes and web optimization.')
@@ -77,8 +77,8 @@ $(document).ready(function () {
 
             //CONTACTO
             $("#contacto h2:nth-of-type(1)").text("Contact");
-            $("#contacto p:nth-of-type(1)").text("¡Let me be part of your team!");
-            $("#contacto p:nth-of-type(2)").text("To contact me, you can fill this form or using the social media icons to visit them.");
+            $("#contacto p:nth-of-type(1)").text("Let me be part of your team!");
+            $("#contacto p:nth-of-type(2)").text("To contact me, you can fill this form or use the social media icons to visit them.");
             $("#contacto > form > div:nth-child(2) > label").text("Name:");
             $("#contacto > form > div:nth-child(3) > label").text("Email:");
             $("#contacto > form > div:nth-child(4) > label").text("Message:");
@@ -190,7 +190,7 @@ $(document).ready(function () {
             $(".card:nth-of-type(3) p").text('Conocimientos sobre Diseño Web con Wordpress y su ecosistema de plugins. Experiencia con Elementor como constructor visual y diseño de páginas web. Creación de páginas web desde cero.')
 
             $(".card:nth-of-type(4) h5").text('Programación Fullstack');
-            $(".card:nth-of-type(4) p").text('Conocimientos sobre php, bases de datos y uso de Workbench. Inserción, edición, selección y borrado de elementos en bases de datos. Integración de las mismas en aplicaciones web.')
+            $(".card:nth-of-type(4) p").text('Conocimientos sobre php, bases de datos y uso de Workbench. Inserción, edición, selección y borrado de elementos en bases de datos. Integración de las mismas en aplicaciones web. Tengo algo de experiencia con Frameworks como Laravel.')
             
             //PORTFOLIO
             $(".portfolio h2").text('Proyectos');
