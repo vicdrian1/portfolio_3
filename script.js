@@ -72,7 +72,7 @@ $(document).ready(function () {
         $(".card:nth-of-type(3) p").text('Knowledge about how to create a webpage from zero using wordpress. Experience with theme builders like Elementor, child themes and web optimization.')
 
         $(".card:nth-of-type(4) h5").text('Fullstack Development');
-        $(".card:nth-of-type(4) p").text('Knowledge about php, data bases and how to use them in web applications. Some experience with frameworks like Laravel.')
+        $(".card:nth-of-type(4) p").text('Knowledge about PHP, data bases and how to use them in web applications. Some experience with frameworks like Laravel.')
 
         //PORTFOLIO
         $(".portfolio h2").text('Projects');
@@ -146,7 +146,7 @@ $(document).ready(function () {
         //Parte 2
         $("#gac2 > h2").text('What tools did I use?');
         $("#gac2 > p").html('The website was designed using HTML5, CSS3, Javascript and JQuery. All the information was uploaded to a database from '+
-        '<span>"Heroku"</span> and was linked to our site using php. The code was uploaded to a <span>"Github"</span> repository '+
+        '<span>"Heroku"</span> and was linked to our site using PHP. The code was uploaded to a <span>"Github"</span> repository '+
         'and synchronized with our website so any change is live in real time.');
 
         //Parte 3
@@ -188,7 +188,7 @@ $(document).ready(function () {
         $(".card:nth-of-type(3) p").text('Conocimientos sobre Diseño Web con Wordpress y su ecosistema de plugins. Experiencia con Elementor como constructor visual y diseño de páginas web. Creación de páginas web desde cero.')
 
         $(".card:nth-of-type(4) h5").text('Programación Fullstack');
-        $(".card:nth-of-type(4) p").text('Conocimientos sobre php, bases de datos y uso de Workbench. Inserción, edición, selección y borrado de elementos en bases de datos. Integración de las mismas en aplicaciones web. Tengo algo de experiencia con Frameworks como Laravel.')
+        $(".card:nth-of-type(4) p").text('Conocimientos sobre PHP, bases de datos y uso de Workbench. Inserción, edición, selección y borrado de elementos en bases de datos. Integración de las mismas en aplicaciones web. Tengo algo de experiencia con Frameworks como Laravel.')
 
         //PORTFOLIO
         $(".portfolio h2").text('Proyectos');
@@ -276,7 +276,7 @@ $(document).ready(function () {
 
         //Parte 2
         $("#gac2 > h2").text('¿Qué herramientas utilicé?');
-        $("#gac2 > p").html('La página web se diseñó utilizando HTML5, CSS3, Javascript y jQuery. La información se subió a una base de datos facilitada por <span> Heroku </span> y se conectó a la web con php. ' +
+        $("#gac2 > p").html('La página web se diseñó utilizando HTML5, CSS3, Javascript y jQuery. La información se subió a una base de datos facilitada por <span> Heroku </span> y se conectó a la web con PHP. ' +
             'El código está subido a un repositorio de <span>Github</span> y sincronizado para que cualquier cambio realizado sea efectivo casi al instante. ');
 
         //Parte 3
