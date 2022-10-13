@@ -6,10 +6,12 @@ $(document).ready(function () {
 
     /*Al hacer clic, se ejecutan las funciones "swapPref" y "tradES", además, se cambia el texto del idioma seleccionado.*/
     $(".es").click(function(){
-        swapPref("change-en","change-es")
-        $(".language-selected").text("ES");
-        tradES();
-
+        $("body").animate({"opacity":"0.0"}, 600, function(){
+            swapPref("change-en","change-es")
+            $(".language-selected").text("ES");
+            tradES();
+        })
+        $("body").animate({"opacity":"1.0"}, 400, function(){});
     })
 
     $(".en").click(function(){
@@ -88,7 +90,7 @@ $(document).ready(function () {
         /* ARTWORK TEST */
 
             //Parte 1
-            $("#hero > div > div.texto1 > p").html('Final project of my <span>"UX/UI Design course"</span>. The idea was to create a social network for artists. To do so, we make a research about the topic, we also made surveys and interviews to potential users of the app. Sketches and prototypes were also made to test the functionality of the app. This project was divided in 2 parts: One for the UX research and one for the UI Design.');
+            $("#hero > div > div.texto1 > p").html('Final project of my <span>"UX/UI Design course"</span>. The idea was to create a social network for artists. For this purpose, we carried out a research on this topic, conducting surveys and some interviews with potential users of the app. This project was divided in 2 parts: One for the UX research and one for the UI Design.');
             $('#warn').text('Note: To watch the video in good quality, we recommend to watch this portfolio on pc or tablet.')
 
             //Parte 2
@@ -167,7 +169,10 @@ $(document).ready(function () {
 
     //SPANISH
     function tradES(){
-        $("body").animate({"opacity":"0.0"}, 600, function(){
+
+            //FORM
+            $(".formulario").attr("action", "/pages/exito.html")
+
             //Menú
             $(".menu_item:nth-of-type(1) a").text('Sobre Mi');
             $(".menu_item:nth-of-type(2) a").text('Conocimientos');
@@ -290,16 +295,7 @@ $(document).ready(function () {
             'mejor aspecto visual a la web. Si quieres ver la web en funcionamiento y probarla, aquí te dejo un enlace: ');
             $('#gac3 > button > a').text('Ir al proyecto');
             $('#btnFinal').html('<a href="/index.html">Ir a la página principal</a>');
-        
-        /*SUCCESS TEST*/
-        
-            $("body > div > h1").text("¡Gracias por tu mensaje!");
-            $("body > div > p").text("Tu mensaje ha sido recibido y contactaré contigo lo más pronto posible.");
-            $("body > div > button > a").text("Volver a la página principal");
-
-        })
-        $("body").animate({"opacity":"1.0"}, 600, function(){});
-    }
+    };
 
     /*-MENÚ HAMBURGUESA-*/
 
