@@ -154,6 +154,12 @@ $(document).ready(function () {
             $('#gac3 > button > a').text('Go to the project');
             $('#btnFinal').html('<a href="/index.html">Go to the main page</a>');
 
+
+        /*SUCESS TEST*/
+            $("body > div > h1").text("Thanks for your message!");
+            $("body > div > p").text("Your message has been received and I'm contacting you as soon as possible.");
+            $("body > div > button > a").text("Go to Main Page");
+
         })
 
         $("body").animate({"opacity":"1.0"}, 400, function(){});
@@ -284,6 +290,12 @@ $(document).ready(function () {
             'mejor aspecto visual a la web. Si quieres ver la web en funcionamiento y probarla, aquí te dejo un enlace: ');
             $('#gac3 > button > a').text('Ir al proyecto');
             $('#btnFinal').html('<a href="/index.html">Ir a la página principal</a>');
+        
+        /*SUCCESS TEST*/
+        
+            $("body > div > h1").text("¡Gracias por tu mensaje!");
+            $("body > div > p").text("Tu mensaje ha sido recibido y contactaré contigo lo más pronto posible.");
+            $("body > div > button > a").text("Volver a la página principal");
 
         })
         $("body").animate({"opacity":"1.0"}, 600, function(){});
